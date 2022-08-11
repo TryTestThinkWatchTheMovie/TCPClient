@@ -16,24 +16,24 @@ http://21303.live.streamtheworld.com:3690/METRO_FM_SC ///////////////-----------
 
 
 
-//25643.live.streamtheworld.com 80 => error:System.IO.IOException: 'Unable to read data from the transport connection    no response no connection
+//25643.live.streamtheworld.com 80 => error:System.IO.IOException: 'Unable to read data from the transport connection   host not responding  no response no connection
 
-//25643.live.streamtheworld.com 3690  => error:System.IO.IOException: 'Unable to read data from the transport connection    no response no connection
+//25643.live.streamtheworld.com 3690  => error:System.IO.IOException: 'Unable to read data from the transport connection host not responding   no response no connection
 
 //25643.live.streamtheworld.com 443  =>   ***** no errors To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
 Press any key to close this window . . .
 
-//23623.live.streamtheworld.com 80 =>  error:System.IO.IOException: 'Unable to read data from the transport connection    no response no connection
+//23623.live.streamtheworld.com 80 =>  error:System.IO.IOException: 'Unable to read data from the transport connection host not responding   no response no connection
 
- //23623.live.streamtheworld.com 3690 =>   error:System.IO.IOException: 'Unable to read data from the transport connection    no response no connection
+ //23623.live.streamtheworld.com 3690 =>   error:System.IO.IOException: 'Unable to read data from the transport connection host not responding   no response no connection
 
  //23623.live.streamtheworld.com 443 =>  ***** no errorsTo automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
 Press any key to close this window . . .
 
 
-//21303.live.streamtheworld.com 80 =>  error:System.IO.IOException: 'Unable to read data from the transport connection    no response no connection
+//21303.live.streamtheworld.com 80 =>  error:System.IO.IOException: 'Unable to read data from the transport connection host not responding   no response no connection
 
-//21303.live.streamtheworld.com 3690 =>   error:System.IO.IOException: 'Unable to read data from the transport connection    no response no connection
+//21303.live.streamtheworld.com 3690 =>   error:System.IO.IOException: 'Unable to read data from the transport connection host not responding   no response no connection
 
 //21303.live.streamtheworld.com 443 =>  ***** no errors To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
 Press any key to close this window . . .
