@@ -6,6 +6,16 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
+Stackoverflow answer OUTPUT :
+http://25643.live.streamtheworld.com:80/METRO_FM_SC   
+http://25643.live.streamtheworld.com:3690/METRO_FM_SC 
+http://23623.live.streamtheworld.com:80/METRO_FM_SC  
+http://23623.live.streamtheworld.com:3690/METRO_FM_SC 
+http://21303.live.streamtheworld.com:80/METRO_FM_SC
+http://21303.live.streamtheworld.com:3690/METRO_FM_SC ///////////////--------------
+
+
+
 //25643.live.streamtheworld.com 80 => error:System.IO.IOException: 'Unable to read data from the transport connection    no response no connection
 
 //25643.live.streamtheworld.com 3690  => error:System.IO.IOException: 'Unable to read data from the transport connection    no response no connection
