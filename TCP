@@ -1,0 +1,66 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
+using System.Threading.Tasks;
+
+//25643.live.streamtheworld.com 80 => error:System.IO.IOException: 'Unable to read data from the transport connection    no response no connection
+
+//25643.live.streamtheworld.com 3690  => error:System.IO.IOException: 'Unable to read data from the transport connection    no response no connection
+
+//25643.live.streamtheworld.com 443  =>   ***** no errors To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
+Press any key to close this window . . .
+
+//23623.live.streamtheworld.com 80 =>  error:System.IO.IOException: 'Unable to read data from the transport connection    no response no connection
+
+ //23623.live.streamtheworld.com 3690 =>   error:System.IO.IOException: 'Unable to read data from the transport connection    no response no connection
+
+ //23623.live.streamtheworld.com 443 =>  ***** no errorsTo automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
+Press any key to close this window . . .
+
+
+//21303.live.streamtheworld.com 80 =>  error:System.IO.IOException: 'Unable to read data from the transport connection    no response no connection
+
+//21303.live.streamtheworld.com 3690 =>   error:System.IO.IOException: 'Unable to read data from the transport connection    no response no connection
+
+//21303.live.streamtheworld.com 443 =>  ***** no errors To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
+Press any key to close this window . . .
+
+
+namespace NetworkProgramming
+{
+    public class IPEndPointSample
+    {
+
+        public static void Main()
+        {
+            using var client = new TcpClient();
+
+            var hostname = "25643.live.streamtheworld.com"; 
+                                                            
+            client.Connect(hostname,80);
+            using NetworkStream networkStream = client.GetStream();
+            networkStream.ReadTimeout = 2000;
+
+            var message = "\nHost: 25643.live.streamtheworld.com\r\n\n\r\n";
+
+            Console.WriteLine(message);
+
+            using var reader = new StreamReader(networkStream, Encoding.UTF8);
+
+            byte[] bytes = Encoding.UTF8.GetBytes(message);
+            networkStream.Write(bytes, 0, bytes.Length);
+
+
+            Console.WriteLine(reader.ReadToEnd());
+
+
+            /
+        }
+    }
+}
+
+
+
